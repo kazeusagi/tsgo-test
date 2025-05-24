@@ -1,11 +1,10 @@
 {
 	"scripts": {
-		"lint": "biome check --diagnostic-level warn"
+		"tsc": "tsc -p . --extendedDiagnostics",
+		"tsgo": "tsgo -p . --extendedDiagnostics"
 	},
-  "dependencies": {},
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/bun": "^1.2.3",
-    "lefthook": "^1.11.0"
-  }
+	"devDependencies": {
+		"@typescript/native-preview": "^7.0.0-dev.20250523.1",
+		"typescript": "^5.8.3"
+	}
 }
