@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"lint": "biome check --diagnostic-level warn"
+	},
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.2.3",
+    "lefthook": "^1.11.0"
+  }
+}
