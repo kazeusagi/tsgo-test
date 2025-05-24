@@ -9,7 +9,8 @@
         "ms-azuretools.vscode-docker",
         "GitHub.copilot",
         "oderwat.indent-rainbow",
-        "biomejs.biome"
+        "biomejs.biome",
+        "wix.vscode-import-cost"
       ]
     }
   }
