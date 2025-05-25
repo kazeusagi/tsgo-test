@@ -21,21 +21,41 @@
 turborepoが実行を仲介しているのでコンパイラのみ純粋な実行結果ではありません
 
 - tsc  
-`bun run tsc` -> 私の環境では約3.3s
+`bun run tsc` -> 私の環境では約3.6s
+
+```
+ Tasks:    10 successful, 10 total
+Cached:    0 cached, 10 total
+  Time:    3.599s 
+```
 
 - tsgo  
-`bun run tsgo` -> 私の環境では約0.7s
+`bun run tsgo` -> 私の環境では約0.71s
 
-> 約4.7倍程度の高速化
+```
+ Tasks:    10 successful, 10 total
+Cached:    0 cached, 10 total
+  Time:    710ms 
+```
+
+> 約5.1倍の高速化
 
 ### コンパイラ単体での検証方法
 
 `cd packages/ui0`
 
 - tsc  
-`bun run tsc` -> 私の環境では約1.0s
+`bun run tsc` -> 私の環境では約1.2s
+
+```
+Total time:                  1.21s
+```
 
 - tsgo  
-`bun run tsgo` -> 私の環境では約0.22s
+`bun run tsgo` -> 私の環境では約0.23s
 
-> 約4.5倍程度の高速化
+```
+Total time:      0.229s
+```
+
+> 約5.2倍の高速化
